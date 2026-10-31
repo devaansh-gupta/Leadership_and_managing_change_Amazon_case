@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#0a1020" />
+<title>Amazon as an Employer | Leadership & Change Case Lab</title>
+<style>
+:root{
+  --bg:#080d19;--panel:#101a2d;--panel2:#14223a;--panel3:#192a45;--line:rgba(170,190,220,.15);
+  --text:#edf3ff;--muted:#a3b2cc;--soft:#72839f;--cyan:#62e6da;--blue:#72a7ff;--violet:#b99aff;
+  --orange:#ffbd73;--red:#ff7f91;--green:#8be0aa;--shadow:0 20px 60px rgba(0,0,0,.28);--radius:20px;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:92px}body{margin:0;background:radial-gradient(900px 560px at 80% -5%,rgba(74,105,180,.18),transparent 70%),radial-gradient(760px 460px at -10% 20%,rgba(73,195,188,.09),transparent 70%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}
+button,input{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}.wrap{max-width:1440px;margin:auto;padding:0 26px}.topbar{position:sticky;top:0;z-index:30;background:rgba(8,13,25,.82);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.topinner{height:68px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:11px;font-weight:780;letter-spacing:.03em}.brandmark{width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,var(--cyan),var(--blue));display:grid;place-items:center;color:#081322;font-weight:950;box-shadow:0 0 25px rgba(98,230,218,.22)}.brand small{display:block;color:var(--muted);font-size:10px;font-weight:650;letter-spacing:.16em;text-transform:uppercase}.nav{display:flex;gap:5px;overflow:auto;scrollbar-width:none}.nav::-webkit-scrollbar{display:none}.nav a{font-size:12px;color:var(--muted);padding:8px 10px;border-radius:10px;white-space:nowrap;transition:.2s}.nav a:hover,.nav a.active{color:var(--text);background:rgba(114,167,255,.12)}.topright{font-size:11px;color:var(--muted);white-space:nowrap}.topright span{color:var(--cyan)}
+.hero{padding:48px 0 32px;display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:stretch}.eyebrow{display:inline-flex;gap:8px;align-items:center;color:var(--cyan);text-transform:uppercase;letter-spacing:.17em;font-size:10px;font-weight:800}.pulse{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 0 rgba(98,230,218,.7);animation:pulse 2s infinite}@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(98,230,218,0)}100%{box-shadow:0 0 0 0 rgba(98,230,218,0)}}h1{font-size:clamp(36px,5.4vw,68px);letter-spacing:-.055em;line-height:1.03;margin:18px 0 18px;max-width:770px}.gradient{background:linear-gradient(90deg,#fff 0%,#9cefe6 42%,#a9beff 85%);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p.lede{max-width:760px;font-size:17px;color:#c1cde1;line-height:1.7;margin:0 0 20px}.verdict{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(255,189,115,.3);background:rgba(255,189,115,.08);padding:10px 14px;border-radius:12px;font-size:13px;font-weight:750;color:#ffe0b8}.verdict b{color:var(--orange)}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.chip{font-size:10px;color:#b8c5d9;border:1px solid var(--line);background:rgba(255,255,255,.025);border-radius:999px;padding:6px 10px}.hero-visual{min-height:360px;position:relative;border:1px solid var(--line);border-radius:26px;overflow:hidden;background:linear-gradient(145deg,rgba(26,43,72,.92),rgba(12,20,36,.92));box-shadow:var(--shadow)}#network{position:absolute;inset:0;width:100%;height:100%;opacity:.8}.visual-overlay{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:22px;background:linear-gradient(180deg,rgba(8,13,25,.1),rgba(8,13,25,.55))}.visual-label{display:flex;justify-content:space-between;align-items:center;font-size:10px;text-transform:uppercase;letter-spacing:.15em;color:#b6c4dc}.visual-label strong{color:var(--cyan);font-weight:800}.visual-center{align-self:center;text-align:center;margin-top:25px}.visual-center .big{font-size:clamp(40px,5vw,63px);font-weight:850;letter-spacing:-.06em;line-height:1}.visual-center .sub{color:#b7c6de;font-size:12px;margin-top:8px}.orbit-caption{display:flex;justify-content:space-between;gap:12px;font-size:10px;color:#a8b7d0}.orbit-caption span{border-top:1px solid rgba(255,255,255,.16);padding-top:8px;flex:1}.orbit-caption b{display:block;color:var(--text);font-size:12px}
+.section{padding:38px 0 26px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:18px}.kicker{font-size:10px;letter-spacing:.18em;color:var(--cyan);text-transform:uppercase;font-weight:800}.section h2{font-size:clamp(25px,3vw,36px);letter-spacing:-.04em;line-height:1.12;margin:8px 0 0}.section-intro{max-width:680px;color:var(--muted);font-size:13px;margin:10px 0 0}.small-note{color:var(--soft);font-size:10px}.grid{display:grid;gap:14px}.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}.grid.four{grid-template-columns:repeat(4,minmax(0,1fr))}.card{border:1px solid var(--line);background:linear-gradient(150deg,rgba(19,31,52,.94),rgba(13,22,39,.94));border-radius:var(--radius);padding:20px;box-shadow:0 10px 35px rgba(0,0,0,.12);position:relative;overflow:hidden}.card::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(120deg,rgba(255,255,255,.025),transparent 40%)}.card h3{font-size:15px;margin:0 0 9px;letter-spacing:-.02em}.card p{font-size:12px;color:var(--muted);margin:0;line-height:1.65}.stat{font-size:34px;font-weight:850;letter-spacing:-.06em;line-height:1.05}.stat-label{font-size:10px;color:var(--muted);margin-top:8px}.stat-foot{font-size:10px;color:var(--soft);margin-top:10px}.stat-accent{color:var(--cyan)}.stat-orange{color:var(--orange)}.stat-red{color:var(--red)}.stat-blue{color:var(--blue)}.stat-violet{color:var(--violet)}
+.verdict-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.verdict-side{padding:23px;border-radius:18px;position:relative;overflow:hidden;min-height:186px}.thriving{background:linear-gradient(135deg,rgba(57,176,153,.16),rgba(18,37,52,.9));border:1px solid rgba(98,230,218,.24)}.surviving{background:linear-gradient(135deg,rgba(255,127,145,.13),rgba(42,24,42,.92));border:1px solid rgba(255,127,145,.22)}.side-tag{font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:800}.thriving .side-tag{color:var(--cyan)}.surviving .side-tag{color:var(--red)}.verdict-side h3{font-size:20px;margin:9px 0}.verdict-side p{font-size:12px;color:#c0cce0;max-width:580px}.tagline{display:inline-block;margin-top:10px;font-size:10px;padding:5px 9px;border-radius:99px;background:rgba(255,255,255,.07);color:#d4deef}
+.evidence{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.evidence-card{padding:17px;border:1px solid var(--line);border-radius:16px;background:rgba(18,29,49,.82);min-height:220px}.evidence-card .num{font-size:10px;color:var(--cyan);letter-spacing:.12em;font-weight:800}.evidence-card h3{font-size:14px;margin:10px 0 7px}.evidence-card ul{padding-left:16px;margin:0;color:var(--muted);font-size:11px}.evidence-card li{margin:7px 0}.implication{border-top:1px solid var(--line);margin-top:12px;padding-top:10px;color:#e7eefb;font-size:11px}.implication b{color:var(--orange)}
+.loop-card{padding:22px}.loop{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;align-items:center;margin:20px 0 12px}.loop-step{min-height:120px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.025);padding:12px;position:relative;display:flex;flex-direction:column;justify-content:center}.loop-step .n{font-size:10px;color:var(--cyan);font-weight:800}.loop-step strong{font-size:12px;margin:6px 0}.loop-step small{font-size:10px;color:var(--muted)}.loop-arrow{position:absolute;right:-14px;z-index:2;color:var(--cyan);font-size:18px;animation:arrowPulse 1.8s infinite}@keyframes arrowPulse{50%{transform:translateX(4px);opacity:.45}}
+.framework-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.framework{border:1px solid var(--line);border-radius:16px;background:rgba(17,28,48,.88);overflow:hidden}.framework summary{cursor:pointer;list-style:none;padding:17px 18px;display:flex;align-items:center;gap:12px}.framework summary::-webkit-details-marker{display:none}.framework summary .fnum{width:30px;height:30px;display:grid;place-items:center;border-radius:9px;color:var(--cyan);background:rgba(98,230,218,.1);font-size:11px;font-weight:850}.framework summary strong{font-size:13px;display:block}.framework summary small{font-size:10px;color:var(--muted);display:block;margin-top:3px}.framework summary .plus{margin-left:auto;font-size:20px;color:var(--muted);transition:.2s}.framework[open] summary .plus{transform:rotate(45deg);color:var(--cyan)}.framework-body{padding:0 18px 18px 60px;color:var(--muted);font-size:11px}.framework-body p{margin:0 0 9px}.framework-body b{color:var(--text)}.framework-body .diagnosis{padding:10px 12px;border-left:2px solid var(--cyan);background:rgba(98,230,218,.05);border-radius:0 9px 9px 0;color:#d6e2f4;margin-top:10px}
+.leadership-split{display:grid;grid-template-columns:1fr 1fr;gap:14px}.lead-col{border-radius:18px;padding:21px;border:1px solid var(--line);background:rgba(17,28,48,.8)}.lead-col.good{border-top:3px solid var(--cyan)}.lead-col.risk{border-top:3px solid var(--red)}.lead-col h3{margin:0 0 12px;font-size:15px}.lead-row{display:flex;gap:10px;margin:11px 0}.lead-icon{flex:0 0 26px;width:26px;height:26px;display:grid;place-items:center;border-radius:8px;background:rgba(255,255,255,.06);font-size:12px}.lead-row strong{display:block;font-size:11px;color:#eaf1fd}.lead-row span{display:block;font-size:10px;color:var(--muted);margin-top:2px}
+.sim-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:15px;align-items:start}.controls{position:relative}.control{margin:17px 0}.control-head{display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:11px}.control-head label{color:#dce7f8;font-weight:650}.control-head output{font-weight:850;color:var(--cyan);font-variant-numeric:tabular-nums}.control input[type=range]{width:100%;accent-color:var(--cyan);margin:12px 0 4px;cursor:pointer}.range-labels{display:flex;justify-content:space-between;color:var(--soft);font-size:9px}.control-desc{font-size:10px;color:var(--soft);margin-top:3px}.scenario-row{display:flex;flex-wrap:wrap;gap:7px;margin-top:15px}.scenario{padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.035);color:#c7d4e8;font-size:10px;transition:.2s}.scenario:hover,.scenario.active{border-color:rgba(98,230,218,.5);background:rgba(98,230,218,.1);color:var(--cyan)}.sim-results{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.metric{border:1px solid var(--line);border-radius:15px;background:rgba(255,255,255,.025);padding:14px;min-height:125px}.metric-top{display:flex;justify-content:space-between;align-items:center;font-size:10px;color:var(--muted)}.metric-value{font-size:29px;font-weight:850;letter-spacing:-.05em;margin:8px 0 4px;font-variant-numeric:tabular-nums}.meter{height:6px;background:rgba(255,255,255,.09);border-radius:9px;overflow:hidden}.meter span{display:block;height:100%;width:0;border-radius:9px;transition:width .75s cubic-bezier(.2,.75,.2,1)}.metric small{display:block;color:var(--soft);font-size:9px;margin-top:8px}.metric.goodmetric .metric-value{color:var(--cyan)}.metric.riskmetric .metric-value{color:var(--red)}.metric.warnmetric .metric-value{color:var(--orange)}.chart-wrap{border:1px solid var(--line);border-radius:16px;background:rgba(5,11,22,.32);padding:15px;margin-top:12px}.chart-title{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:8px}.chart-title strong{font-size:12px}.chart-title span{font-size:9px;color:var(--soft)}canvas.chart{width:100%;height:210px;display:block}.sim-explain{font-size:10px;color:var(--muted);margin-top:11px;line-height:1.6}.formula{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:9px;color:#a9bbd4;background:rgba(255,255,255,.035);border:1px solid var(--line);padding:9px 11px;border-radius:9px;margin-top:10px;white-space:normal}
+.radar-wrap{display:grid;grid-template-columns:310px 1fr;gap:15px;align-items:center}.radar{width:100%;max-width:310px;margin:auto}.radar-legend{display:grid;grid-template-columns:1fr 1fr;gap:9px}.legend-item{font-size:10px;color:var(--muted);display:flex;gap:8px;align-items:center}.dot{width:8px;height:8px;border-radius:50%;background:var(--cyan)}.dot.orange{background:var(--orange)}
+.change-flow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.phase{padding:18px;border:1px solid var(--line);border-radius:16px;background:rgba(17,28,48,.85);position:relative}.phase .days{color:var(--cyan);font-size:10px;letter-spacing:.12em;font-weight:800}.phase h3{font-size:15px;margin:8px 0}.phase p{font-size:11px;color:var(--muted)}.phase ul{padding-left:16px;color:#cbd8eb;font-size:10px}.phase li{margin:6px 0}.phase .owner{font-size:9px;color:var(--orange);border-top:1px solid var(--line);padding-top:9px;margin-top:12px}
+.scorecard{width:100%;border-collapse:collapse;font-size:11px}.scorecard th{text-align:left;color:var(--soft);font-size:9px;letter-spacing:.1em;text-transform:uppercase;padding:10px;border-bottom:1px solid var(--line)}.scorecard td{padding:11px 10px;border-bottom:1px solid rgba(170,190,220,.09);color:#c6d3e7;vertical-align:top}.scorecard td:first-child{font-weight:700;color:#edf3ff}.scorecard tr:last-child td{border-bottom:0}.signal{display:inline-block;border-radius:99px;padding:4px 7px;font-size:9px;white-space:nowrap}.signal.red{background:rgba(255,127,145,.12);color:#ff9cab}.signal.amber{background:rgba(255,189,115,.12);color:#ffd49f}.signal.green{background:rgba(139,224,170,.12);color:#a5edbb}
+.answer{border:1px solid rgba(98,230,218,.28);background:linear-gradient(135deg,rgba(30,62,75,.65),rgba(17,27,48,.95));border-radius:22px;padding:24px;position:relative;overflow:hidden}.answer:before{content:"";position:absolute;width:360px;height:360px;border-radius:50%;right:-180px;top:-190px;background:radial-gradient(circle,rgba(98,230,218,.15),transparent 68%)}.answer h3{font-size:18px;margin:0 0 12px}.answer p{font-size:12px;color:#d0dced;line-height:1.75;position:relative;max-width:1050px}.answer strong{color:#fff}.talktrack{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}.talk{padding:13px;border-radius:13px;background:rgba(5,11,22,.3);border:1px solid var(--line)}.talk b{font-size:10px;color:var(--cyan);display:block;margin-bottom:5px}.talk span{font-size:10px;color:var(--muted)}
+.footer{padding:35px 0 55px;color:var(--soft);font-size:10px;border-top:1px solid var(--line);margin-top:34px}.footer strong{color:#c5d2e7}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.btn{border:1px solid var(--line);color:#d8e3f4;background:rgba(255,255,255,.04);border-radius:10px;padding:9px 12px;font-size:10px}.btn:hover{border-color:rgba(98,230,218,.5);color:var(--cyan)}.topbtn{position:fixed;right:20px;bottom:18px;z-index:20;border:1px solid rgba(98,230,218,.35);background:rgba(9,17,31,.85);backdrop-filter:blur(12px);color:var(--cyan);border-radius:50%;width:40px;height:40px;display:grid;place-items:center;opacity:0;pointer-events:none;transition:.25s}.topbtn.show{opacity:1;pointer-events:auto}.reveal{opacity:0;transform:translateY(16px);transition:opacity .65s ease,transform .65s ease}.reveal.visible{opacity:1;transform:none}.bar-anim{animation:barin 1s ease both}@keyframes barin{from{transform:scaleX(0);transform-origin:left}to{transform:scaleX(1)}}
+@media(max-width:1050px){.hero{grid-template-columns:1fr}.hero-visual{min-height:300px}.evidence{grid-template-columns:repeat(2,1fr)}.grid.four{grid-template-columns:repeat(2,1fr)}.radar-wrap{grid-template-columns:260px 1fr}}
+@media(max-width:760px){.wrap{padding:0 15px}.topinner{height:auto;min-height:62px;flex-wrap:wrap;padding:10px 0}.nav{order:3;width:100%;padding-bottom:2px}.topright{display:none}.hero{padding-top:30px}.hero p.lede{font-size:14px}.grid.two,.grid.three,.grid.four,.verdict-grid,.framework-grid,.leadership-split,.sim-layout{grid-template-columns:1fr}.loop{grid-template-columns:1fr;gap:7px}.loop-step{min-height:auto;display:block}.loop-arrow{right:12px;top:40%;transform:rotate(90deg)}.change-flow{grid-template-columns:1fr}.radar-wrap{grid-template-columns:1fr}.radar{max-width:260px}.talktrack{grid-template-columns:1fr}.section-head{display:block}.section-head .small-note{display:block;margin-top:8px}.evidence{grid-template-columns:1fr 1fr}.scorecard{min-width:700px}.table-scroll{overflow-x:auto}.metric{min-height:116px}}
+@media(max-width:430px){.evidence{grid-template-columns:1fr}.sim-results{grid-template-columns:1fr 1fr}.metric-value{font-size:25px}.visual-overlay{padding:15px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+
+/* LIVE OPERATING-MODEL LAYER */
+.live-control{padding-top:18px}
+.live-headline{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.live-pill{display:inline-flex;align-items:center;gap:7px;border:1px solid rgba(98,230,218,.28);background:rgba(98,230,218,.07);color:var(--cyan);border-radius:999px;padding:7px 11px;font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.live-pill i{width:6px;height:6px;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px var(--cyan);animation:pulse 1.4s infinite}
+.control-deck{padding:16px 18px;margin-bottom:13px}
+.deck-top{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:13px}
+.deck-top strong{font-size:12px}.deck-top small{font-size:9px;color:var(--soft)}
+.mode-switch{display:flex;gap:6px;flex-wrap:wrap}
+.mode-switch button{border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.035);color:#c5d3e7;padding:8px 11px;font-size:10px;transition:.25s}
+.mode-switch button.active{border-color:rgba(98,230,218,.55);background:rgba(98,230,218,.11);color:var(--cyan);box-shadow:0 0 18px rgba(98,230,218,.08)}
+.signal-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}
+.signal-box{padding:11px 12px;border:1px solid var(--line);border-radius:13px;background:rgba(4,10,20,.28);min-width:0}
+.signal-meta{display:flex;justify-content:space-between;gap:6px;font-size:9px;color:var(--muted)}
+.signal-value{font-size:24px;font-weight:850;letter-spacing:-.06em;margin:5px 0 7px;font-variant-numeric:tabular-nums}
+.signal-bar{height:4px;border-radius:20px;background:rgba(255,255,255,.09);overflow:hidden}
+.signal-bar span{display:block;height:100%;width:0;border-radius:20px;transition:width .7s cubic-bezier(.2,.7,.2,1)}
+.signal-caption{font-size:8px;color:var(--soft);margin-top:7px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.flow-board{padding:19px;overflow:hidden}
+.flow-board-head{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:15px}
+.flow-board-head h3{font-size:14px;margin:0}.flow-board-head span{font-size:9px;color:var(--soft)}
+.flow-route{border:1px solid var(--line);border-radius:16px;padding:14px;background:rgba(255,255,255,.018);transition:border-color .3s,background .3s,opacity .3s}
+.flow-route+.flow-route{margin-top:12px}
+.flow-route.selected{border-color:rgba(98,230,218,.32);background:linear-gradient(100deg,rgba(98,230,218,.045),rgba(255,255,255,.012))}
+.flow-route.case-route.selected{border-color:rgba(255,127,145,.35);background:linear-gradient(100deg,rgba(255,127,145,.055),rgba(255,255,255,.012))}
+.route-title{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-bottom:12px}
+.route-title b{font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+.route-title em{font-size:8px;font-style:normal;border-radius:99px;padding:4px 7px;background:rgba(255,255,255,.06);color:#c3d0e5}
+.route-title em.case-tag{color:#ffabb7;background:rgba(255,127,145,.1)}
+.flow-track{display:flex;align-items:stretch;gap:6px;min-width:0}
+.flow-node{flex:1;min-width:0;position:relative;padding:12px 11px 11px;border:1px solid rgba(170,190,220,.13);border-radius:12px;background:rgba(6,13,25,.62);transition:.35s;cursor:pointer;overflow:hidden}
+.flow-node:before{content:"";position:absolute;inset:0;opacity:0;background:radial-gradient(circle at 20% 0%,rgba(98,230,218,.16),transparent 70%);transition:.3s}
+.case-route .flow-node.active{border-color:rgba(255,127,145,.7);box-shadow:0 0 24px rgba(255,127,145,.09);transform:translateY(-3px)}
+.case-route .flow-node.active:before{background:radial-gradient(circle at 20% 0%,rgba(255,127,145,.17),transparent 70%);opacity:1}
+.redesign-route .flow-node.active{border-color:rgba(98,230,218,.72);box-shadow:0 0 24px rgba(98,230,218,.1);transform:translateY(-3px)}
+.flow-node.active:before{opacity:1}
+.flow-node>*{position:relative;z-index:1}
+.node-top{display:flex;justify-content:space-between;align-items:center;gap:5px;color:var(--soft);font-size:8px;font-weight:800;letter-spacing:.1em}
+.node-icon{width:23px;height:23px;border-radius:7px;display:grid;place-items:center;font-size:12px;background:rgba(255,255,255,.065)}
+.flow-node strong{display:block;font-size:11px;line-height:1.25;margin:8px 0 5px}
+.flow-node small{display:block;font-size:9px;color:var(--muted);line-height:1.4}
+.flow-link{width:34px;flex:0 0 34px;align-self:center;height:2px;background:rgba(170,190,220,.15);position:relative;overflow:visible}
+.flow-link:after{content:"";position:absolute;left:0;top:-1px;height:4px;width:100%;background:linear-gradient(90deg,transparent,rgba(98,230,218,.42),transparent);animation:linkScan 2.3s linear infinite}
+.flow-packet{position:absolute;top:-4px;left:0;width:10px;height:10px;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px rgba(98,230,218,.85);animation:packetMove 2.8s ease-in-out infinite}
+.case-route .flow-packet{background:var(--red);box-shadow:0 0 12px rgba(255,127,145,.85)}
+.flow-link:nth-of-type(2) .flow-packet{animation-delay:.6s}.flow-link:nth-of-type(4) .flow-packet{animation-delay:1.2s}.flow-link:nth-of-type(6) .flow-packet{animation-delay:1.8s}
+@keyframes packetMove{0%{left:-3px;opacity:.15;transform:scale(.7)}18%{opacity:1}82%{opacity:1}100%{left:calc(100% - 7px);opacity:.2;transform:scale(1.15)}}
+@keyframes linkScan{0%{transform:translateX(-110%)}100%{transform:translateX(110%)}}
+.flow-live-row{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-top:13px;padding-top:12px;border-top:1px solid var(--line);flex-wrap:wrap}
+.flow-event{font-size:10px;color:#d5e1f2;display:flex;align-items:center;gap:8px;min-height:24px}
+.flow-event .event-dot{width:7px;height:7px;border-radius:50%;background:var(--orange);box-shadow:0 0 12px currentColor;flex:0 0 7px}
+.flow-event span{color:var(--muted)}
+.flow-actions{display:flex;gap:7px;align-items:center}
+.flow-actions button{border:1px solid var(--line);border-radius:9px;background:rgba(255,255,255,.035);color:#cbd7e8;font-size:9px;padding:7px 9px}
+.flow-actions button:hover{border-color:rgba(98,230,218,.45);color:var(--cyan)}
+.flow-progress{display:flex;gap:4px;align-items:center}
+.flow-progress i{display:block;width:15px;height:3px;border-radius:9px;background:rgba(255,255,255,.12);transition:.25s}
+.flow-progress i.active{background:var(--cyan);box-shadow:0 0 9px rgba(98,230,218,.65)}
+.case-route .flow-progress i.active{background:var(--red);box-shadow:0 0 9px rgba(255,127,145,.65)}
+.flow-inspector{display:grid;grid-template-columns:1fr 1.2fr;gap:14px;margin-top:13px}
+.inspector-main{border:1px solid var(--line);border-radius:13px;padding:15px;background:rgba(5,11,22,.28)}
+.inspector-main .inspector-label{font-size:8px;color:var(--cyan);letter-spacing:.15em;font-weight:850;text-transform:uppercase}
+.inspector-main h4{font-size:15px;margin:7px 0 6px}.inspector-main p{font-size:10px;color:var(--muted);margin:0;line-height:1.6}
+.inspector-side{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.inspector-tile{padding:12px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.018)}
+.inspector-tile b{display:block;font-size:9px;color:var(--orange);margin-bottom:5px}.inspector-tile span{font-size:9px;color:var(--muted);line-height:1.5;display:block}
+.workflow-footnote{font-size:8px;color:var(--soft);margin-top:10px}
+.marquee{margin-top:13px;border:1px solid var(--line);background:rgba(4,10,20,.26);border-radius:10px;overflow:hidden;padding:8px 0;white-space:nowrap}
+.marquee-track{display:inline-flex;gap:35px;min-width:max-content;animation:marquee 30s linear infinite;color:#aabbd2;font-size:9px;letter-spacing:.05em}
+.marquee-track b{color:var(--cyan);font-weight:750}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@media(max-width:900px){.signal-grid{grid-template-columns:repeat(2,1fr)}.flow-track{flex-wrap:wrap}.flow-node{flex:1 1 calc(50% - 25px)}.flow-link{width:22px;flex-basis:22px}.flow-inspector{grid-template-columns:1fr}}
+@media(max-width:600px){.flow-track{display:grid;grid-template-columns:1fr;gap:7px}.flow-node{min-height:100px}.flow-link{width:2px;height:22px;justify-self:center;margin:-2px 0;flex-basis:auto}.flow-link:after{display:none}.flow-packet{left:-4px;top:0;animation:packetVertical 2.8s ease-in-out infinite}.flow-link:nth-of-type(2) .flow-packet,.flow-link:nth-of-type(4) .flow-packet,.flow-link:nth-of-type(6) .flow-packet{animation-name:packetVertical}.case-route .flow-packet{animation-name:packetVertical}@keyframes packetVertical{0%{top:-3px;opacity:.15}18%{opacity:1}82%{opacity:1}100%{top:calc(100% - 7px);opacity:.2}}.flow-inspector{grid-template-columns:1fr}.inspector-side{grid-template-columns:1fr 1fr}.signal-value{font-size:21px}.flow-board{padding:12px}.control-deck{padding:13px}}
+
+</style>
+</head>
+<body>
+<header class="topbar"><div class="wrap topinner">
+  <a class="brand" href="#top"><span class="brandmark">A</span><span>CASE LAB<small>Leadership & Change Management</small></span></a>
+  <nav class="nav" aria-label="Case sections">
+    <a href="#liveflow">Live system</a><a href="#verdict">Verdict</a><a href="#evidence">Evidence</a><a href="#diagnosis">Frameworks</a><a href="#leadership">Leadership</a><a href="#simulation">Simulation</a><a href="#change">Change plan</a><a href="#answer">Final answer</a>
+  </nav>
+  <div class="topright">IVEY CASE <span>9B16C006</span> · SESSION 8.1</div>
+</div></header>
+<main id="top" class="wrap">
+<section class="hero">
+ <div>
+  <div class="eyebrow"><i class="pulse"></i> Case investigation · 2016 teaching case</div>
+  <h1><span class="gradient">Amazon as an Employer</span><br/>High performance.<br/>At what human cost?</h1>
+  <p class="lede">A leadership and change-management diagnosis of a workplace built around customer obsession, extreme standards and relentless innovation — but also intense pressure, internal competition and high employee churn.</p>
+  <div class="verdict"><b>CASE VERDICT</b> Selective thriving; systemic strain.</div>
+  <div class="meta"><span class="chip">Ivey Publishing · 9B16C006</span><span class="chip">Evidence window: 2013–2015</span><span class="chip">Lens: leadership, culture, HR systems & change</span><span class="chip">Interactive scenario model</span></div>
+ </div>
+ <div class="hero-visual" aria-label="Animated network illustrating organisational pressure and innovation">
+  <canvas id="network"></canvas>
+  <div class="visual-overlay"><div class="visual-label"><span>Organisational system map</span><strong>LIVE SYSTEM VIEW ●</strong></div>
+   <div class="visual-center"><div class="big">OUTPUT <span style="color:var(--cyan)">≠</span> WELLBEING</div><div class="sub">Strong execution can coexist with weak human sustainability.</div></div>
+   <div class="orbit-caption"><span><b>Customer obsession</b>Strategic engine</span><span><b>High-pressure norms</b>Human cost</span><span><b>Talent sustainability</b>Critical risk</span></div>
+  </div>
+ </div>
+</section>
+
+
+<section id="liveflow" class="section live-control reveal">
+ <div class="section-head">
+  <div><div class="kicker">LIVE OPERATING MODEL · INTERACTIVE SYSTEM MAP</div><h2>Watch the workplace system in motion</h2><p class="section-intro">Trace how leadership priorities become HR mechanisms, employee behaviour and business outcomes. Switch between the case pattern and a redesigned system; the workflow, signals and simulation indicators respond together.</p></div>
+  <div class="live-pill"><i></i> Animated system running</div>
+ </div>
+ <div class="card control-deck">
+  <div class="deck-top"><div><strong>Live organisational signals</strong><br><small>Illustrative indices recalculated from the scenario model below</small></div>
+   <div class="mode-switch"><button class="active" id="modeCase" type="button">Case conditions</button><button id="modeFuture" type="button">Redesigned system</button></div>
+  </div>
+  <div class="signal-grid">
+   <div class="signal-box"><div class="signal-meta"><span>Employee thriving</span><span>↑ better</span></div><div class="signal-value" id="liveThriving">—</div><div class="signal-bar"><span id="liveThrivingBar" style="background:var(--cyan)"></span></div><div class="signal-caption">Meaning + resources + recovery</div></div>
+   <div class="signal-box"><div class="signal-meta"><span>Pressure exposure</span><span>↓ better</span></div><div class="signal-value" id="livePressure" style="color:var(--red)">—</div><div class="signal-bar"><span id="livePressureBar" style="background:var(--red)"></span></div><div class="signal-caption">Workload + ranking + low safety</div></div>
+   <div class="signal-box"><div class="signal-meta"><span>Innovation capacity</span><span>↑ better</span></div><div class="signal-value" id="liveInnovation" style="color:var(--blue)">—</div><div class="signal-bar"><span id="liveInnovationBar" style="background:var(--blue)"></span></div><div class="signal-caption">Autonomy + purpose + learning</div></div>
+   <div class="signal-box"><div class="signal-meta"><span>Exit pressure</span><span>↓ better</span></div><div class="signal-value" id="liveTurnover" style="color:var(--orange)">—</div><div class="signal-bar"><span id="liveTurnoverBar" style="background:var(--orange)"></span></div><div class="signal-caption">Risk signal, not actual attrition</div></div>
+  </div>
+ </div>
+ <div class="card flow-board">
+  <div class="flow-board-head"><h3>Leadership signal → people system → employee response → business result</h3><span>Click any node to inspect the cause-and-effect logic</span></div>
+  <div class="flow-route case-route selected" id="caseRoute">
+   <div class="route-title"><b>PATH A · WHAT THE CASE DESCRIBES</b><em class="case-tag">HIGH OUTPUT / HIGH HUMAN COST</em></div>
+   <div class="flow-track">
+    <div class="flow-node active" data-route="case" data-index="0" tabindex="0"><div class="node-top"><span>01 · SIGNAL</span><span class="node-icon">🎯</span></div><strong>Customer obsession + extreme standards</strong><small>Speed, ownership and relentless delivery expectations</small></div>
+    <div class="flow-link"><span class="flow-packet"></span></div>
+    <div class="flow-node" data-route="case" data-index="1" tabindex="0"><div class="node-top"><span>02 · MECHANISM</span><span class="node-icon">⚙</span></div><strong>Always-on work + forced ranking</strong><small>Long hours, late emails, bell-curve reviews, harsh feedback</small></div>
+    <div class="flow-link"><span class="flow-packet"></span></div>
+    <div class="flow-node" data-route="case" data-index="2" tabindex="0"><div class="node-top"><span>03 · RESPONSE</span><span class="node-icon">🧠</span></div><strong>Overwork, politics, silence and exits</strong><small>Some feel energised; others protect themselves or disengage</small></div>
+    <div class="flow-link"><span class="flow-packet"></span></div>
+    <div class="flow-node" data-route="case" data-index="3" tabindex="0"><div class="node-top"><span>04 · OUTCOME</span><span class="node-icon">📉</span></div><strong>Innovation with talent sustainability risk</strong><small>Execution can coexist with churn, knowledge loss and inequity</small></div>
+   </div>
+   <div class="flow-live-row"><div class="flow-event"><i class="event-dot"></i><div><b id="caseEventTitle">Signal detected: relentless delivery expectations</b><br><span id="caseEventText">A high bar is set; the way it is translated into daily work determines the human cost.</span></div></div><div class="flow-progress" id="caseProgress"><i class="active"></i><i></i><i></i><i></i></div></div>
+  </div>
+  <div class="flow-route redesign-route" id="futureRoute">
+   <div class="route-title"><b>PATH B · RECOMMENDED FUTURE STATE</b><em>HIGH STANDARDS / SUSTAINABLE PERFORMANCE</em></div>
+   <div class="flow-track">
+    <div class="flow-node" data-route="future" data-index="0" tabindex="0"><div class="node-top"><span>01 · SIGNAL</span><span class="node-icon">🧭</span></div><strong>Customer ambition with clear priorities</strong><small>Keep the customer bar; clarify trade-offs and capacity</small></div>
+    <div class="flow-link"><span class="flow-packet"></span></div>
+    <div class="flow-node" data-route="future" data-index="1" tabindex="0"><div class="node-top"><span>02 · MECHANISM</span><span class="node-icon">🛠</span></div><strong>Fair reviews, guardrails and coaching</strong><small>Absolute standards, recovery norms, respectful candour</small></div>
+    <div class="flow-link"><span class="flow-packet"></span></div>
+    <div class="flow-node" data-route="future" data-index="2" tabindex="0"><div class="node-top"><span>03 · RESPONSE</span><span class="node-icon">🤝</span></div><strong>Voice, ownership and collaboration</strong><small>People challenge ideas without attacking colleagues</small></div>
+    <div class="flow-link"><span class="flow-packet"></span></div>
+    <div class="flow-node" data-route="future" data-index="3" tabindex="0"><div class="node-top"><span>04 · OUTCOME</span><span class="node-icon">🚀</span></div><strong>Repeatable innovation + talent retention</strong><small>Customer execution supported by trust and continuity</small></div>
+   </div>
+   <div class="flow-live-row"><div class="flow-event"><i class="event-dot" style="background:var(--cyan)"></i><div><b id="futureEventTitle">Future state: preserve ambition, redesign the system</b><br><span id="futureEventText">Performance is sustained through trust, fairness, recovery and capability—not lower standards.</span></div></div><div class="flow-progress" id="futureProgress"><i class="active"></i><i></i><i></i><i></i></div></div>
+  </div>
+  <div class="flow-inspector">
+   <div class="inspector-main"><div class="inspector-label" id="inspectorLabel">CASE SYSTEM · STEP 01</div><h4 id="inspectorTitle">Customer obsession becomes the dominant signal</h4><p id="inspectorBody">The customer-first philosophy is a genuine strategic strength. The risk emerges when urgency is interpreted as unlimited employee availability rather than disciplined prioritisation.</p></div>
+   <div class="inspector-side"><div class="inspector-tile"><b>Management interpretation</b><span id="inspectorMeaning">Leadership intent is filtered through targets, role models, incentives and daily manager behaviour.</span></div><div class="inspector-tile"><b>What to watch</b><span id="inspectorWatch">After-hours work, workload predictability, customer quality and employee voice.</span></div></div>
+  </div>
+  <div class="flow-live-row"><div class="small-note">The moving packets represent direction of influence, not measured real-time company data.</div><div class="flow-actions"><button type="button" id="toggleFlow">Pause motion</button><button type="button" id="replayFlow">Replay sequence ↻</button></div></div>
+  <div class="workflow-footnote">Analytical distinction: the case documents practices and reported experiences; the future-state lane is a management recommendation. Neither lane is a claim about every Amazon team or current Amazon operations.</div>
+ </div>
+ <div class="marquee"><div class="marquee-track"><span><b>CASE SIGNAL</b> Customer obsession</span><span>→</span><span><b>PEOPLE SYSTEM</b> Performance pressure</span><span>→</span><span><b>BEHAVIOUR</b> Voice or silence</span><span>→</span><span><b>OUTCOME</b> Innovation or knowledge loss</span><span>→</span><span><b>CHANGE LEVER</b> Sustainable high standards</span><span>→</span><span><b>CASE SIGNAL</b> Customer obsession</span><span>→</span><span><b>PEOPLE SYSTEM</b> Performance pressure</span><span>→</span><span><b>BEHAVIOUR</b> Voice or silence</span><span>→</span><span><b>OUTCOME</b> Innovation or knowledge loss</span><span>→</span><span><b>CHANGE LEVER</b> Sustainable high standards</span></div></div>
+</section>
+
+<section id="verdict" class="section reveal">
+ <div class="section-head"><div><div class="kicker">01 · The central question</div><h2>Are employees thriving, or just surviving?</h2><p class="section-intro">The evidence points to a polarised employee experience, not a single universal reality. A high-performing minority could find the environment energising; many others faced conditions associated with chronic strain and exit.</p></div><div class="small-note">Interpretive conclusion · not a quantified employee survey</div></div>
+ <div class="verdict-grid">
+  <div class="verdict-side thriving"><div class="side-tag">The thriving experience</div><h3>High-fit, high-agency performers</h3><p>Employees motivated by ambitious problems, exceptional peers, rapid execution, customer impact, career acceleration and the chance to build products at extraordinary scale could thrive in this environment.</p><span class="tagline">Purpose · mastery · ownership · pace</span></div>
+  <div class="verdict-side surviving"><div class="side-tag">The survival experience</div><h3>Employees carrying the hidden cost</h3><p>Long hours, after-midnight responsiveness, public or covert criticism, forced ranking, fear of being labelled weak, limited flexibility and perceived career penalties for caregiving created a system-level risk of exhaustion and exit.</p><span class="tagline">Pressure · insecurity · competition · churn</span></div>
+ </div>
+ <div class="grid four" style="margin-top:14px">
+  <div class="card"><div class="stat stat-accent">~50,000</div><div class="stat-label">Planned operating capacity</div><div class="stat-foot">The case says new offices would expand capacity to approximately this level.</div></div>
+  <div class="card"><div class="stat stat-orange">1 year</div><div class="stat-label">Median employee tenure cited</div><div class="stat-foot">The case reports this for Amazon in 2013, alongside very high turnover.</div></div>
+  <div class="card"><div class="stat stat-red">80 hrs</div><div class="stat-label">Workweek expectation described</div><div class="stat-foot">Some employees perceived anything short of an “absolute all” commitment as weakness.</div></div>
+  <div class="card"><div class="stat stat-blue">0</div><div class="stat-label">Women in top leadership, as described</div><div class="stat-foot">The case raises barriers around voice, caregiving and progression.</div></div>
+ </div>
+ <p class="small-note" style="margin-top:11px">These are historical case references, not claims about Amazon’s current workforce. “80 hours” and leadership representation are reported as case evidence and perceptions, not universal measures for every employee.</p>
+</section>
+
+<section id="evidence" class="section reveal">
+ <div class="section-head"><div><div class="kicker">02 · What the case actually shows</div><h2>Evidence → employee experience → business consequence</h2><p class="section-intro">Separate the observable management practices from their likely behavioural and strategic effects. The case contains both a compelling innovation system and a costly people system.</p></div></div>
+ <div class="evidence">
+  <article class="evidence-card"><div class="num">01 / WORK DESIGN</div><h3>Extreme pace and availability</h3><ul><li>Long hours and overtime were normalised.</li><li>Employees were reprimanded for not responding to late-night emails.</li><li>High pressure and stress were part of the reported experience.</li></ul><div class="implication"><b>Likely effect:</b> short-term throughput, but fatigue, burnout risk and weaker recovery.</div></article>
+  <article class="evidence-card"><div class="num">02 / CULTURE</div><h3>Radical criticism, limited safety</h3><ul><li>Colleagues were pushed to criticise one another’s ideas.</li><li>Feedback could be sent confidentially to managers.</li><li>Some employees feared sabotage and reputational harm.</li></ul><div class="implication"><b>Likely effect:</b> challenge can improve ideas; fear can suppress voice and collaboration.</div></article>
+  <article class="evidence-card"><div class="num">03 / TALENT SYSTEM</div><h3>Internal competition and churn</h3><ul><li>Annual bell-curve performance reviews.</li><li>Managers defended preferred employees and argued over rankings.</li><li>Bottom performers could be removed; median tenure was reported as one year.</li></ul><div class="implication"><b>Likely effect:</b> sharper differentiation, but zero-sum behaviour and talent replacement costs.</div></article>
+  <article class="evidence-card"><div class="num">04 / EQUITY & INCLUSION</div><h3>One definition of commitment</h3><ul><li>No women in top leadership, as described in the case.</li><li>Caregiving and family responsibilities were seen as career disadvantages.</li><li>Older employees also worried about being displaced.</li></ul><div class="implication"><b>Likely effect:</b> narrower talent pool, unequal access to progression and avoidable exits.</div></article>
+ </div>
+ <div class="card loop-card" style="margin-top:14px">
+  <h3>The reinforcing loop: how a high-performance system can become self-defeating</h3><p>When output pressure is treated as the solution to every performance problem, the organisation can create a feedback loop that makes its own talent problem worse.</p>
+  <div class="loop">
+   <div class="loop-step"><span class="n">01</span><strong>Relentless targets</strong><small>More work, faster cycles, constant availability</small><span class="loop-arrow">→</span></div>
+   <div class="loop-step"><span class="n">02</span><strong>Threat-based behaviour</strong><small>Defensiveness, politics, silence and overwork</small><span class="loop-arrow">→</span></div>
+   <div class="loop-step"><span class="n">03</span><strong>Exhaustion & exits</strong><small>People leave, disengage or are managed out</small><span class="loop-arrow">→</span></div>
+   <div class="loop-step"><span class="n">04</span><strong>Knowledge loss</strong><small>Teams repeatedly replace experienced talent</small><span class="loop-arrow">→</span></div>
+   <div class="loop-step"><span class="n">05</span><strong>Pressure rises again</strong><small>Remaining employees absorb work and targets</small></div>
+  </div>
+  <div class="small-note">The loop is a causal interpretation of the case, not a measured causal estimate.</div>
+ </div>
+</section>
+
+<section id="diagnosis" class="section reveal">
+ <div class="section-head"><div><div class="kicker">03 · Framework-based diagnosis</div><h2>Read the case through six management lenses</h2><p class="section-intro">Open each framework to see the concept, how the case maps to it, and what it tells us about the central question.</p></div><div class="small-note">Select a framework to expand</div></div>
+ <div class="framework-grid">
+  <details class="framework" open><summary><span class="fnum">01</span><span><strong>Job Demands–Resources (JD-R) Model</strong><small>Why high demands without adequate resources create burnout</small></span><span class="plus">+</span></summary><div class="framework-body"><p><b>Model:</b> every job contains demands that consume energy and resources that help employees meet those demands. High demands can be sustainable when resources—autonomy, support, role clarity, recovery and feedback—are sufficient.</p><p><b>Case demands:</b> long hours, after-hours responsiveness, aggressive criticism, ranking anxiety, high speed and fear of being eliminated.</p><p><b>Case resources:</b> talented colleagues, meaningful customer impact, autonomy in inventing, challenging work, learning and potential financial upside. These resources were real for some employees, but not necessarily enough to offset the demands for everyone.</p><div class="diagnosis"><b>Diagnosis:</b> the demand–resource balance is structurally tilted. The organisation gets energy and output from committed employees, but risks draining the very people required to sustain innovation. This is the strongest framework for explaining “thriving vs surviving.”</div></div></details>
+  <details class="framework"><summary><span class="fnum">02</span><span><strong>Schein’s Three Levels of Culture</strong><small>Artifacts, espoused values and underlying assumptions</small></span><span class="plus">+</span></summary><div class="framework-body"><p><b>Artifacts:</b> long hours, midnight emails, sharp meeting criticism, confidential peer feedback, bell-curve reviews and intense hiring screens.</p><p><b>Espoused values:</b> customer obsession, innovation, ownership, high standards, working hard and having fun.</p><p><b>Possible underlying assumption:</b> exceptional results require exceptional personal sacrifice; pressure separates the committed from the rest.</p><div class="diagnosis"><b>Diagnosis:</b> the lived culture can contradict the stated promise of fun, care and teamwork. Bezos’s response to the exposé shows an attempt to restate the intended culture, but a memo cannot override daily systems and managerial behaviour.</div></div></details>
+  <details class="framework"><summary><span class="fnum">03</span><span><strong>Competing Values Framework (CVF)</strong><small>Adhocracy, market, hierarchy and clan cultures</small></span><span class="plus">+</span></summary><div class="framework-body"><p><b>Adhocracy:</b> experimentation, speed and invention are visible in the “working backwards” product process.</p><p><b>Market:</b> customer results, competitive intensity and performance differentiation dominate.</p><p><b>Hierarchy:</b> formal ranking and annual review processes add control and internal competition. <b>Clan:</b> trust, belonging and mutual support appear comparatively weak in the employee accounts.</p><div class="diagnosis"><b>Diagnosis:</b> Amazon’s case culture overweights market and adhocracy values. The answer is not to remove urgency or innovation; it is to strengthen clan capabilities—trust, coaching and collaboration—so the other two can endure.</div></div></details>
+  <details class="framework"><summary><span class="fnum">04</span><span><strong>Psychological Safety (Edmondson)</strong><small>Can people speak up, disagree and learn without fear?</small></span><span class="plus">+</span></summary><div class="framework-body"><p><b>Concept:</b> psychological safety is the shared belief that interpersonal risk-taking—asking questions, admitting errors, raising concerns or challenging assumptions—is safe.</p><p><b>Case signal:</b> criticism was encouraged, but employees also described fear, sabotage, negative comments and pressure to defend their standing. Candour and safety are not the same thing.</p><div class="diagnosis"><b>Diagnosis:</b> “disagree and commit” only works when disagreement is about the work, not a weapon against the person. A system that rewards the harshest critic can reduce honest information flow and weaken learning.</div></div></details>
+  <details class="framework"><summary><span class="fnum">05</span><span><strong>Herzberg + Organisational Justice</strong><small>Motivation, hygiene factors and perceived fairness</small></span><span class="plus">+</span></summary><div class="framework-body"><p><b>Motivators:</b> achievement, responsibility, growth, meaningful work and visible impact help explain why some employees were energised.</p><p><b>Hygiene and justice risks:</b> work–life imbalance, job insecurity, perceived favouritism, forced rankings, unclear promotion fairness and weak accommodation for caregivers can create dissatisfaction even when the work itself is exciting.</p><p><b>Justice dimensions:</b> distributive (who gets rewards), procedural (how rankings are decided) and interactional (how people are treated).</p><div class="diagnosis"><b>Diagnosis:</b> meaningful work cannot compensate indefinitely for unfair or demeaning processes. Employees may love the mission and still reject the employment deal.</div></div></details>
+  <details class="framework"><summary><span class="fnum">06</span><span><strong>AMO Model of HR Performance</strong><small>Ability × Motivation × Opportunity</small></span><span class="plus">+</span></summary><div class="framework-body"><p><b>Ability:</b> rigorous selection and star-performer interviewers seek high capability.</p><p><b>Motivation:</b> customer impact, ownership, advancement and stock upside motivate; fear of elimination and constant comparison can also create controlled, defensive motivation.</p><p><b>Opportunity:</b> employees need voice, cooperation, time, inclusion and access to meaningful assignments. Forced ranking and caregiving penalties can undermine these.</p><div class="diagnosis"><b>Diagnosis:</b> Amazon’s case system appears strong at selecting ability and activating effort, but less reliable at creating inclusive, psychologically safe opportunity. High talent density is wasted when the system makes people compete instead of combine their ability.</div></div></details>
+ </div>
+</section>
+
+<section id="leadership" class="section reveal">
+ <div class="section-head"><div><div class="kicker">04 · Leadership assessment</div><h2>The leadership paradox: visionary ambition, coercive signals</h2><p class="section-intro">The case should not be reduced to whether the CEO was “good” or “bad.” Assess the leadership behaviours, the systems they legitimise, and the employee experience they produce.</p></div></div>
+ <div class="leadership-split">
+  <div class="lead-col good"><h3>Leadership strengths visible in the case</h3>
+   <div class="lead-row"><div class="lead-icon">◎</div><div><strong>Vision and strategic clarity</strong><span>Customer obsession and future-oriented invention give teams a clear external purpose.</span></div></div>
+   <div class="lead-row"><div class="lead-icon">↗</div><div><strong>High standards and bias for action</strong><span>Relentless execution and the working-backwards method force product teams to clarify customer value before building.</span></div></div>
+   <div class="lead-row"><div class="lead-icon">✦</div><div><strong>Talent density and intellectual challenge</strong><span>Ambitious people can learn from exceptional colleagues and work on products with large-scale impact.</span></div></div>
+   <div class="lead-row"><div class="lead-icon">⌁</div><div><strong>Public response to the culture criticism</strong><span>Bezos explicitly asked employees to escalate reports of low empathy and stated that such behaviour should not be tolerated.</span></div></div>
+  </div>
+  <div class="lead-col risk"><h3>Leadership risks and unintended consequences</h3>
+   <div class="lead-row"><div class="lead-icon">!</div><div><strong>Intensity confused with excellence</strong><span>Long hours and stress become proof of commitment instead of signals to redesign work.</span></div></div>
+   <div class="lead-row"><div class="lead-icon">⇄</div><div><strong>Internal competition displaces collaboration</strong><span>Bell-curve reviews and manager battles create incentives to protect insiders and undermine peers.</span></div></div>
+   <div class="lead-row"><div class="lead-icon">◌</div><div><strong>Founder tone cascades through managers</strong><span>When outbursts or humiliating criticism are tolerated at the top, people may imitate the behaviour even if it is not formally mandated.</span></div></div>
+   <div class="lead-row"><div class="lead-icon">⌂</div><div><strong>Commitment defined too narrowly</strong><span>Caregivers, women and employees with responsibilities outside work may be penalised by an “always on” ideal-worker norm.</span></div></div>
+  </div>
+ </div>
+ <div class="card" style="margin-top:14px"><h3>Leadership interpretation</h3><p>Bezos’s leadership in the case combines a powerful visionary and performance-oriented stance with behaviours and systems that can be experienced as coercive. The decisive issue is not ambition; it is whether leaders create the conditions—trust, fairness, recovery and voice—that allow people to deliver ambitious results repeatedly. The CEO’s message about empathy is a useful symbolic intervention, but culture changes only when selection, evaluation, promotion, workload and manager accountability reinforce it.</p></div>
+</section>
+
+<section id="simulation" class="section reveal">
+ <div class="section-head"><div><div class="kicker">05 · Interactive system simulation</div><h2>Change the management system. Watch the outcomes move.</h2><p class="section-intro">Adjust the work environment and compare the resulting indicators. The model is a teaching simulation designed to make trade-offs visible; it is not Amazon employee data, a validated psychometric measure or a forecast.</p></div><div class="small-note">Illustrative indices · 0–100</div></div>
+ <div class="sim-layout">
+  <div class="card controls">
+   <h3>Management-system controls</h3><p>Move a slider to redesign the environment. Higher values mean more of that factor.</p>
+   <div class="control"><div class="control-head"><label for="workload">Workload & always-on intensity</label><output id="workloadVal">85</output></div><input id="workload" type="range" min="0" max="100" value="85"><div class="range-labels"><span>Manageable</span><span>Extreme</span></div><div class="control-desc">Demand intensity, overtime and after-hours availability.</div></div>
+   <div class="control"><div class="control-head"><label for="ranking">Forced ranking / internal competition</label><output id="rankingVal">80</output></div><input id="ranking" type="range" min="0" max="100" value="80"><div class="range-labels"><span>Collaborative</span><span>Zero-sum</span></div><div class="control-desc">How strongly performance is framed as relative winners and losers.</div></div>
+   <div class="control"><div class="control-head"><label for="safety">Psychological safety & respectful candour</label><output id="safetyVal">25</output></div><input id="safety" type="range" min="0" max="100" value="25"><div class="range-labels"><span>Low safety</span><span>High safety</span></div><div class="control-desc">Ability to challenge, ask for help and report mistakes without retaliation.</div></div>
+   <div class="control"><div class="control-head"><label for="autonomy">Autonomy, coaching & resources</label><output id="autonomyVal">70</output></div><input id="autonomy" type="range" min="0" max="100" value="70"><div class="range-labels"><span>Little support</span><span>Strong support</span></div><div class="control-desc">Decision latitude, manager support, tools and capability development.</div></div>
+   <div class="control"><div class="control-head"><label for="flex">Flexibility & inclusion</label><output id="flexVal">20</output></div><input id="flex" type="range" min="0" max="100" value="20"><div class="range-labels"><span>Rigid</span><span>Inclusive</span></div><div class="control-desc">Caregiving accommodation, fair access and sustainable work design.</div></div>
+   <div class="control"><div class="control-head"><label for="purpose">Purpose & customer impact</label><output id="purposeVal">90</output></div><input id="purpose" type="range" min="0" max="100" value="90"><div class="range-labels"><span>Low meaning</span><span>High meaning</span></div><div class="control-desc">Clarity of mission, customer value and meaningful achievement.</div></div>
+   <div class="control"><div class="control-head"><label for="standards">High standards & accountability</label><output id="standardsVal">95</output></div><input id="standards" type="range" min="0" max="100" value="95"><div class="range-labels"><span>Low challenge</span><span>High standards</span></div><div class="control-desc">Quality bar and ownership, independent of humiliating or zero-sum tactics.</div></div>
+   <div class="scenario-row"><button class="scenario active" data-scenario="case">Case conditions</button><button class="scenario" data-scenario="sustainable">Sustainable high performance</button><button class="scenario" data-scenario="overcorrect">Low-pressure / low-challenge</button><button class="scenario" data-scenario="reset">Reset sliders</button></div>
+  </div>
+  <div>
+   <div class="sim-results">
+    <div class="metric warnmetric"><div class="metric-top"><span>Employee thriving</span><span>↑ good</span></div><div class="metric-value" id="thrivingOut">—</div><div class="meter"><span id="thrivingBar" style="background:var(--cyan)"></span></div><small>Meaning, resources, fairness and recovery combined.</small></div>
+    <div class="metric riskmetric"><div class="metric-top"><span>Burnout risk</span><span>↓ good</span></div><div class="metric-value" id="burnoutOut">—</div><div class="meter"><span id="burnoutBar" style="background:var(--red)"></span></div><small>Demand and insecurity relative to support.</small></div>
+    <div class="metric goodmetric"><div class="metric-top"><span>Innovation capacity</span><span>↑ good</span></div><div class="metric-value" id="innovationOut">—</div><div class="meter"><span id="innovationBar" style="background:var(--blue)"></span></div><small>Purpose, autonomy, safety and a productive challenge level.</small></div>
+    <div class="metric riskmetric"><div class="metric-top"><span>Turnover pressure</span><span>↓ good</span></div><div class="metric-value" id="turnoverOut">—</div><div class="meter"><span id="turnoverBar" style="background:var(--orange)"></span></div><small>Relative intention-to-exit pressure, not actual attrition.</small></div>
+    <div class="metric goodmetric"><div class="metric-top"><span>Customer execution</span><span>↑ good</span></div><div class="metric-value" id="customerOut">—</div><div class="meter"><span id="customerBar" style="background:var(--violet)"></span></div><small>Illustrative delivery capability from innovation, standards and stability.</small></div>
+    <div class="metric warnmetric"><div class="metric-top"><span>Inclusion & fairness</span><span>↑ good</span></div><div class="metric-value" id="inclusionOut">—</div><div class="meter"><span id="inclusionBar" style="background:var(--green)"></span></div><small>Flexibility, psychological safety and access.</small></div>
+   </div>
+   <div class="chart-wrap"><div class="chart-title"><strong>Six-quarter trajectory (illustrative)</strong><span>Animated scenario projection · not observed data</span></div><canvas class="chart" id="trajectory"></canvas><div class="radar-legend"><div class="legend-item"><i class="dot"></i>Thriving</div><div class="legend-item"><i class="dot orange"></i>Innovation</div><div class="legend-item"><i class="dot" style="background:var(--red)"></i>Turnover pressure (higher = greater risk)</div><div class="legend-item"><i class="dot" style="background:var(--blue)"></i>Customer execution</div></div></div>
+   <div class="sim-explain" id="simExplain">Case settings illustrate the central paradox: purpose and high standards can sustain innovation, while low safety, rigid flexibility and intense workload suppress thriving and increase exit pressure.</div>
+   <div class="formula">Model logic: thriving rises with purpose, autonomy, safety, inclusion and recovery. Burnout and turnover pressure rise with workload and forced competition. Innovation benefits from purpose, autonomy, safety and a challenging—but not extreme—workload. All outputs are illustrative weighted indices.</div>
+  </div>
+ </div>
+</section>
+
+<section class="section reveal">
+ <div class="section-head"><div><div class="kicker">06 · System balance</div><h2>What should Amazon protect — and what must change?</h2><p class="section-intro">The goal is not to turn a demanding, innovative company into a low-accountability workplace. It is to remove avoidable organisational friction and human damage while protecting the mechanisms that create customer value.</p></div></div>
+ <div class="grid two">
+  <div class="card"><h3 style="color:var(--cyan)">Protect the performance engine</h3><p>Customer obsession; working backwards from the customer; high standards; ownership; rigorous hiring; rapid experimentation; candid debate about ideas; accountability for measurable outcomes.</p></div>
+  <div class="card"><h3 style="color:var(--red)">Redesign the people system</h3><p>Chronic overtime as a norm; late-night responsiveness as a loyalty test; forced bell-curve competition; humiliating criticism; manager incentives to sacrifice peers; promotion systems that penalise caregivers; lack of recovery and support.</p></div>
+ </div>
+ <div class="radar-wrap card" style="margin-top:14px">
+  <svg class="radar" viewBox="0 0 320 280" role="img" aria-label="Illustrative balance between a high-pressure model and a sustainable high-performance model">
+   <g transform="translate(160 137)">
+    <polygon points="0,-105 100,-32 62,85 -62,85 -100,-32" fill="none" stroke="rgba(180,200,230,.22)" stroke-width="1"/>
+    <polygon points="0,-78 74,-24 46,63 -46,63 -74,-24" fill="none" stroke="rgba(180,200,230,.15)"/>
+    <polygon points="0,-52 50,-16 31,42 -31,42 -50,-16" fill="none" stroke="rgba(180,200,230,.15)"/>
+    <path d="M0 -105L0 0 M100 -32L0 0 M62 85L0 0 M-62 85L0 0 M-100 -32L0 0" stroke="rgba(180,200,230,.17)"/>
+    <polygon points="0,-94 88,-28 40,55 -18,25 -74,-24" fill="rgba(255,189,115,.17)" stroke="var(--orange)" stroke-width="2"/>
+    <polygon points="0,-88 75,-24 54,72 -48,66 -85,-27" fill="rgba(98,230,218,.14)" stroke="var(--cyan)" stroke-width="2"/>
+   </g>
+   <g fill="#aebdd3" font-size="10" text-anchor="middle"><text x="160" y="15">Innovation</text><text x="286" y="110">Customer focus</text><text x="236" y="258">Wellbeing</text><text x="83" y="258">Inclusion</text><text x="30" y="110">Trust</text></g>
+  </svg>
+  <div><h3>Strategic balance, not a softening of standards</h3><p style="margin-bottom:13px">The case company is strong in customer focus, pace and invention. The strategic gap is the infrastructure that makes performance repeatable: trust, inclusion, recovery and a fair process.</p><div class="radar-legend"><div class="legend-item"><i class="dot orange"></i>High-pressure model (illustrative)</div><div class="legend-item"><i class="dot"></i>Sustainable high-performance model (target)</div></div><p class="small-note" style="margin-top:12px">Conceptual radar: dimensions are directional, not measured case scores.</p></div>
+ </div>
+</section>
+
+<section id="change" class="section reveal">
+ <div class="section-head"><div><div class="kicker">07 · Change management recommendation</div><h2>Move from “survival of the fittest” to sustainable excellence</h2><p class="section-intro">Use Lewin to frame the transition and Kotter’s logic to mobilise it: unfreeze the assumption that pressure equals performance, change the systems, then anchor new behaviours in management routines.</p></div></div>
+ <div class="change-flow">
+  <article class="phase"><div class="days">DAYS 0–30 · UNFREEZE</div><h3>Make the cost visible</h3><p>Build a credible case for change using people and operating data, not anecdotes alone.</p><ul><li>Measure regretted attrition, regrettable exits by team, overtime, absence, internal mobility and hiring replacement cost.</li><li>Run confidential listening sessions and psychological-safety pulse checks.</li><li>Identify teams where customer results are achieved through unsustainable workload.</li><li>Create a CEO-led coalition across HR, operations, product and employee representatives.</li></ul><div class="owner">Owners: CEO, CHRO, business-unit leaders</div></article>
+  <article class="phase"><div class="days">DAYS 31–60 · CHANGE</div><h3>Redesign the mechanisms</h3><p>Change what managers are rewarded for and how performance is evaluated.</p><ul><li>Replace forced bell-curve quotas with calibrated absolute standards and evidence-based reviews.</li><li>Evaluate team outcomes and collaboration alongside individual impact.</li><li>Set workload guardrails, after-hours norms and recovery after peak periods.</li><li>Train managers in respectful candour, coaching, bias-aware evaluation and safe escalation.</li><li>Introduce flexible pathways for caregivers without lowering performance standards.</li></ul><div class="owner">Owners: CHRO, HR business partners, functional heads</div></article>
+  <article class="phase"><div class="days">DAYS 61–90 · ANCHOR</div><h3>Prove and institutionalise</h3><p>Run pilots, publish results and hardwire the new operating model.</p><ul><li>Pilot in comparable product teams; track customer quality, speed, innovation and people indicators.</li><li>Promote leaders who deliver results while building healthy, inclusive teams.</li><li>Use skip-level listening and team retrospectives to detect retaliation or gaming.</li><li>Scale what works; put people sustainability into leadership scorecards and promotion decisions.</li></ul><div class="owner">Owners: Executive committee, people analytics, line managers</div></article>
+ </div>
+ <div class="card" style="margin-top:14px"><h3>Kotter’s 8-step logic inside the 90-day change</h3><div class="grid four" style="margin-top:13px">
+  <div class="evidence-card" style="min-height:125px"><div class="num">01 · CREATE URGENCY</div><h3>Show the cost</h3><p>Connect regretted attrition, replacement cost, team instability and customer risk.</p></div>
+  <div class="evidence-card" style="min-height:125px"><div class="num">02 · BUILD COALITION</div><h3>Credible sponsors</h3><p>Bring together respected operators, HR, product leaders and employee voices.</p></div>
+  <div class="evidence-card" style="min-height:125px"><div class="num">03 · SET VISION</div><h3>Ambition + humanity</h3><p>Define sustainable excellence: same customer bar, better operating conditions.</p></div>
+  <div class="evidence-card" style="min-height:125px"><div class="num">04 · ENLIST PEOPLE</div><h3>Listen and involve</h3><p>Co-design workload rules, feedback norms and fair performance criteria.</p></div>
+  <div class="evidence-card" style="min-height:125px"><div class="num">05 · REMOVE BARRIERS</div><h3>Fix the incentives</h3><p>Remove forced ranking quotas, after-hours loyalty signals and retaliation risks.</p></div>
+  <div class="evidence-card" style="min-height:125px"><div class="num">06 · QUICK WINS</div><h3>Prove the pilot</h3><p>Show teams improving retention and safety without sacrificing customer outcomes.</p></div>
+  <div class="evidence-card" style="min-height:125px"><div class="num">07 · SUSTAIN</div><h3>Scale what works</h3><p>Expand pilots, train managers and audit teams for gaming or backsliding.</p></div>
+  <div class="evidence-card" style="min-height:125px"><div class="num">08 · ANCHOR</div><h3>Hardwire culture</h3><p>Link leadership promotion and rewards to team health and business performance.</p></div>
+ </div></div>
+ <div class="card" style="margin-top:14px"><h3>What to measure so the organisation cannot game the change</h3><div class="table-scroll"><table class="scorecard"><thead><tr><th>Dimension</th><th>Leading indicators</th><th>Lagging indicators</th><th>Guardrail</th></tr></thead><tbody>
+  <tr><td>Customer & innovation</td><td>Experiment cycle time; customer problem validation; cross-team contribution</td><td>Customer satisfaction; defect/incident rate; product adoption</td><td>Do not improve wellbeing by quietly reducing customer quality or delivery commitments.</td></tr>
+  <tr><td>Workload & recovery</td><td>After-hours message load; workload forecast; staffing coverage</td><td>Burnout pulse; absence; regretted exits</td><td>Measure actual workload, not only self-reported “engagement.”</td></tr>
+  <tr><td>Fairness & inclusion</td><td>Promotion slate diversity; access to high-visibility work; review calibration</td><td>Representation by level; pay/promotion gaps; caregiver retention</td><td>Disaggregate by gender, caregiving status where lawful, role and team.</td></tr>
+  <tr><td>Leadership behaviour</td><td>Quality of feedback; coaching frequency; safe escalation resolution</td><td>Trust in manager; retaliation reports; team stability</td><td>Do not use low complaint volume as proof of safety; silence may reflect fear.</td></tr>
+ </tbody></table></div></div>
+</section>
+
+<section id="answer" class="section reveal">
+ <div class="section-head"><div><div class="kicker">08 · Class-ready conclusion</div><h2>A defensible answer to the case question</h2></div><button class="btn" id="copyAnswer">Copy answer</button></div>
+ <div class="answer" id="answerText">
+  <h3>Employees were not uniformly thriving; the case suggests that many were surviving within a system that rewarded exceptional output but imposed substantial human costs.</h3>
+  <p>Amazon’s workplace offered genuine sources of motivation. Employees who valued intellectual challenge, exceptional colleagues, ownership, rapid advancement and the chance to solve important customer problems could thrive. The working-backwards process—starting with the customer proposition and press release before building the product—also shows that the company’s demanding culture was connected to a disciplined innovation philosophy, not simply long hours.</p>
+  <p>However, the wider people system raises stronger concerns about sustainability. Chronic overtime, late-night responsiveness, harsh criticism, confidential peer feedback, bell-curve reviews and internal competition created pressure and insecurity. The reported high turnover and one-year median tenure are particularly important: they suggest that the organisation was repeatedly losing people and potentially institutional knowledge. The case also describes barriers for women and caregivers, showing that the ideal employee was effectively someone able to give work priority over most other commitments.</p>
+  <p>Through the <strong>Job Demands–Resources model</strong>, the demands appear to exceed the resources available to many employees. Through <strong>Schein’s culture model</strong>, the lived practices risk contradicting the stated values of care, fun and teamwork. The <strong>Competing Values Framework</strong> shows a strong market-and-adhocracy orientation with insufficient clan values of trust and belonging, while <strong>psychological safety</strong> explains why aggressive criticism can undermine learning when people fear retaliation. The <strong>AMO model</strong> suggests that Amazon selected for ability and activated motivation, but did not consistently provide inclusive opportunity.</p>
+  <p>From a leadership perspective, Bezos’s vision, customer obsession and high standards were powerful competitive assets. But leaders also shape culture through what they tolerate, reward and model. A message asking employees to report a lack of empathy is meaningful only if performance reviews, manager promotions, workload allocation and everyday interactions reinforce that expectation.</p>
+  <p><strong>My conclusion:</strong> Amazon’s model produced pockets of extraordinary employee thriving, but it did not demonstrate that relentless pressure was a sustainable way to achieve innovation. The company should preserve its high bar, customer focus and working-backwards discipline while replacing forced ranking with fair performance calibration, building psychological safety, managing workload and making flexibility and progression more inclusive. The objective is not lower performance; it is repeatable high performance without treating employee exhaustion and replacement as normal operating costs.</p>
+ </div>
+ <div class="talktrack">
+  <div class="talk"><b>OPEN WITH THE PARADOX</b><span>“Amazon can be an extraordinary place to build products and an exhausting place to work. Both can be true.”</span></div>
+  <div class="talk"><b>USE THE STRONGEST EVIDENCE</b><span>Pair the innovation process with turnover, ranking pressure, long hours and the caregiver/inclusion evidence.</span></div>
+  <div class="talk"><b>END WITH THE CHANGE</b><span>“Keep the standards; change the system that makes people pay for them.”</span></div>
+ </div>
+</section>
+
+<section class="section reveal">
+ <div class="card"><div class="kicker">Critical thinking guardrail</div><h2 style="font-size:23px;margin:8px 0 10px">What we can — and cannot — conclude from this case</h2><p>The case is a historical teaching document based largely on published reporting and secondary sources. It provides rich qualitative evidence of competing employee experiences, but it does not provide a representative workforce survey, a controlled causal study or current Amazon HR data. Therefore, do not claim that every employee was unhappy, that all teams operated identically, or that any specific policy alone caused turnover. The defensible conclusion is that the described system created a material risk of unsustainable performance and unequal employee experience.</p></div>
+</section>
+</main>
+<footer class="footer"><div class="wrap footer-row"><div><strong>AMAZON AS AN EMPLOYER · CASE LAB</strong><br/>Leadership & Change Management · Ivey case 9B16C006</div><div>Prepared from the supplied case pages (1–5).<br/>Simulation indicators are illustrative and are not empirical Amazon data.</div><div><button class="btn" onclick="window.print()">Print / Save as PDF</button></div></div></footer>
+<button class="topbtn" id="topbtn" aria-label="Back to top">↑</button>
+<script>
+// Animated network: a lightweight neural-network-like visual, not a TensorFlow model.
+(()=>{
+ const c=document.getElementById('network'),ctx=c.getContext('2d');let w=0,h=0,nodes=[];let raf;
+ function resize(){const r=c.getBoundingClientRect(),dpr=Math.min(devicePixelRatio||1,2);w=r.width;h=r.height;c.width=w*dpr;c.height=h*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);nodes=Array.from({length:48},(_,i)=>({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.34,vy:(Math.random()-.5)*.34,r:1.3+Math.random()*1.5,p:Math.random()*Math.PI*2}));}
+ function draw(t){ctx.clearRect(0,0,w,h);for(let i=0;i<nodes.length;i++){const a=nodes[i];a.x+=a.vx;a.y+=a.vy;if(a.x<0||a.x>w)a.vx*=-1;if(a.y<0||a.y>h)a.vy*=-1;for(let j=i+1;j<nodes.length;j++){const b=nodes[j],dx=a.x-b.x,dy=a.y-b.y,d=Math.hypot(dx,dy);if(d<118){ctx.beginPath();ctx.strokeStyle=`rgba(106,203,218,${(1-d/118)*.22})`;ctx.lineWidth=.7;ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();}}const glow=.5+.5*Math.sin(t*.0015+a.p);ctx.beginPath();ctx.fillStyle=`rgba(124,222,226,${.28+glow*.45})`;ctx.arc(a.x,a.y,a.r+glow*.6,0,Math.PI*2);ctx.fill();}raf=requestAnimationFrame(draw);}
+ resize();window.addEventListener('resize',resize);raf=requestAnimationFrame(draw);
+})();
+// Scenario model: intentionally transparent, illustrative weighted indices.
+const defaults={workload:85,ranking:80,safety:25,autonomy:70,flex:20,purpose:90,standards:95};
+const scenarios={case:{...defaults},sustainable:{workload:58,ranking:18,safety:82,autonomy:85,flex:82,purpose:90,standards:94},overcorrect:{workload:25,ranking:10,safety:80,autonomy:48,flex:75,purpose:55,standards:30}};
+const ids=Object.keys(defaults);let current={...defaults},trajectoryTarget=null,lastTrajectory=null,trajectoryRaf=0;
+const clamp=v=>Math.max(0,Math.min(100,v));
+function model(s){
+ const recovery=100-s.workload;
+ const fairness=100-s.ranking;
+ const demandFit=clamp(100-Math.abs(s.workload-62)*1.2);
+ const thriving=clamp(.20*s.purpose+.15*s.autonomy+.20*s.safety+.15*s.flex+.15*fairness+.15*recovery);
+ const burnout=clamp(.45*s.workload+.20*s.ranking+.15*(100-s.safety)+.10*(100-s.flex)+.10*(100-s.autonomy));
+ const innovation=clamp(.25*s.purpose+.20*s.autonomy+.20*s.safety+.15*demandFit+.10*s.flex+.10*s.standards);
+ const turnover=clamp(.30*s.workload+.20*s.ranking+.20*(100-s.safety)+.15*(100-s.flex)+.15*(100-s.purpose));
+ const customer=clamp(.35*innovation+.25*s.standards+.20*(100-turnover)+.20*thriving);
+ const inclusion=clamp(.35*s.flex+.25*s.safety+.20*fairness+.20*s.autonomy);
+ return {thriving,burnout,innovation,turnover,customer,inclusion,demandFit};
+}
+function setMetric(key,val){const node=document.getElementById(key+'Out'),bar=document.getElementById(key+'Bar');if(!node)return;node.textContent=Math.round(val);bar.style.width=val+'%';}
+function trajectory(m){
+ // Illustrative six-quarter path: operating outcomes respond with a lag to the present system settings.
+ const out=[];for(let q=0;q<6;q++){const lag=1-Math.exp(-(q+1)/2.35);out.push({q:q+1,thriving:clamp(42+(m.thriving-42)*lag),innovation:clamp(58+(m.innovation-58)*lag),turnover:clamp(52+(m.turnover-52)*lag),customer:clamp(62+(m.customer-62)*lag)});}return out;
+}
+function drawTrajectory(data){
+ const c=document.getElementById('trajectory'),ctx=c.getContext('2d'),dpr=Math.min(devicePixelRatio||1,2),r=c.getBoundingClientRect();if(!r.width)return;c.width=r.width*dpr;c.height=210*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);const W=r.width,H=210,p={l:30,r:12,t:14,b:27},cw=W-p.l-p.r,ch=H-p.t-p.b;
+ ctx.clearRect(0,0,W,H);ctx.font='9px Inter, sans-serif';ctx.fillStyle='rgba(163,178,204,.78)';ctx.strokeStyle='rgba(170,190,220,.13)';ctx.lineWidth=1;
+ for(let v=0;v<=100;v+=25){const y=p.t+ch*(1-v/100);ctx.beginPath();ctx.moveTo(p.l,y);ctx.lineTo(W-p.r,y);ctx.stroke();ctx.fillText(v,p.l-22,y+3);}
+ for(let i=0;i<6;i++){const x=p.l+cw*i/5;ctx.fillStyle='rgba(163,178,204,.78)';ctx.fillText('Q'+(i+1),x-5,H-7);}
+ const series=[['thriving','#62e6da'],['innovation','#ffbd73'],['turnover','#ff7f91'],['customer','#72a7ff']];
+ series.forEach(([key,color],idx)=>{ctx.beginPath();data.forEach((d,i)=>{const x=p.l+cw*i/5,y=p.t+ch*(1-d[key]/100);if(i===0)ctx.moveTo(x,y);else ctx.lineTo(x,y);});ctx.strokeStyle=color;ctx.lineWidth=2.4;ctx.lineJoin='round';ctx.stroke();data.forEach((d,i)=>{const x=p.l+cw*i/5,y=p.t+ch*(1-d[key]/100);ctx.beginPath();ctx.fillStyle=color;ctx.arc(x,y,3,0,Math.PI*2);ctx.fill();});});
+}
+function animateTrajectory(next){
+ if(trajectoryRaf)cancelAnimationFrame(trajectoryRaf);
+ const baseline=[{thriving:42,innovation:58,turnover:52,customer:62},{thriving:42,innovation:58,turnover:52,customer:62},{thriving:42,innovation:58,turnover:52,customer:62},{thriving:42,innovation:58,turnover:52,customer:62},{thriving:42,innovation:58,turnover:52,customer:62},{thriving:42,innovation:58,turnover:52,customer:62}];
+ const from=lastTrajectory||baseline;let start=null;
+ function step(ts){if(start===null)start=ts;const t=Math.min(1,(ts-start)/680),e=1-Math.pow(1-t,3);const fields=['thriving','innovation','turnover','customer'];const frame=next.map((d,i)=>{const o={q:d.q};fields.forEach(k=>o[k]=from[i][k]+(d[k]-from[i][k])*e);return o;});drawTrajectory(frame);if(t<1)trajectoryRaf=requestAnimationFrame(step);else{lastTrajectory=next;trajectoryRaf=0;}}
+ trajectoryRaf=requestAnimationFrame(step);
+}
+function render(){ids.forEach(k=>{document.getElementById(k).value=current[k];document.getElementById(k+'Val').textContent=current[k];});const m=model(current);setMetric('thriving',m.thriving);setMetric('burnout',m.burnout);setMetric('innovation',m.innovation);setMetric('turnover',m.turnover);setMetric('customer',m.customer);setMetric('inclusion',m.inclusion);
+ let note='';if(m.thriving<45&&m.innovation>55)note='The system is extracting output from a weak employee experience: innovation remains viable, but burnout and exit pressure threaten continuity. This is the “high output, hidden human cost” pattern.';else if(m.thriving>68&&m.innovation>68)note='This is the sustainable high-performance zone: high standards are supported by trust, autonomy, flexibility and manageable demands. The model does not require lowering ambition.';else if(m.innovation<45&&m.thriving>55)note='Employee conditions look healthier, but a weak challenge/standards setting may reduce execution and innovation. Wellbeing alone is not a complete operating strategy.';else note='The system has mixed outcomes. Look for the constraint: low safety harms learning, excessive workload harms recovery, and forced ranking weakens cooperation.';
+ document.getElementById('simExplain').textContent=note;trajectoryTarget=trajectory(m);animateTrajectory(trajectoryTarget);
+}
+ids.forEach(k=>document.getElementById(k).addEventListener('input',e=>{current[k]=+e.target.value;document.querySelectorAll('.scenario').forEach(b=>b.classList.remove('active'));render();}));
+document.querySelectorAll('.scenario').forEach(btn=>btn.addEventListener('click',()=>{const s=btn.dataset.scenario;if(s==='reset')current={...defaults};else current={...scenarios[s]};document.querySelectorAll('.scenario').forEach(b=>b.classList.toggle('active',b===btn));render();}));
+render();window.addEventListener('resize',()=>trajectoryTarget&&drawTrajectory(lastTrajectory||trajectoryTarget));
+// Scroll reveal and active navigation.
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.08});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+const sections=[...document.querySelectorAll('main section[id]')],links=[...document.querySelectorAll('.nav a')];const spy=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id));}}),{rootMargin:'-25% 0px -65% 0px'});sections.forEach(s=>spy.observe(s));
+const topbtn=document.getElementById('topbtn');window.addEventListener('scroll',()=>topbtn.classList.toggle('show',window.scrollY>500));topbtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+// Copy the ready-to-use class answer.
+document.getElementById('copyAnswer').addEventListener('click',async()=>{const txt=document.getElementById('answerText').innerText;const b=document.getElementById('copyAnswer');try{await navigator.clipboard.writeText(txt);b.textContent='Copied';}catch(e){b.textContent='Select text to copy';}setTimeout(()=>b.textContent='Copy answer',1800);});
+
+// LIVE WORKFLOW: animated cause/effect sequence and scenario-linked telemetry.
+(()=>{
+ const $=id=>document.getElementById(id);
+ const caseInfo=[
+  ['Customer obsession becomes the dominant signal','The customer-first philosophy is a genuine strategic strength. The risk emerges when urgency is interpreted as unlimited employee availability rather than disciplined prioritisation.','Leadership intent is filtered through targets, role models, incentives and daily manager behaviour.','After-hours work, workload predictability, customer quality and employee voice.'],
+  ['The signal is translated into people mechanisms','The case describes long hours, late-night email expectations, a bell-curve review system, confidential peer feedback and highly demanding performance expectations.','A performance system teaches employees what is really rewarded. If ranking and availability dominate, people optimise for visibility and survival.','Frequency of late messages, review calibration, workload allocation, feedback quality and perceived fairness.'],
+  ['Employees adapt to the system','Some high-fit employees respond with energy, ownership and fast learning. Others may become defensive, compete internally, withhold concerns, overwork or leave.','The same culture can create a differentiated employee experience. High commitment is not proof that the system is healthy for everyone.','Psychological safety, collaboration, help-seeking, recovery, caregiver experience and regretted exits.'],
+  ['Short-term results carry long-term risks','Amazon’s product ambition and customer focus can continue to produce innovation. But high turnover and a reported one-year median tenure raise concerns about continuity, replacement costs and institutional knowledge.','A system can look productive while externalising costs into hiring, onboarding, team instability and human exhaustion.','Customer outcomes alongside regretted attrition, team tenure, quality, innovation throughput and workforce inclusion.']
+ ];
+ const futureInfo=[
+  ['Customer ambition stays high','Define a small number of customer outcomes and make the trade-offs visible. High standards remain, but teams can distinguish true urgency from avoidable overload.','Leaders communicate priorities, capacity and what can wait.','Priority clarity, customer value, delivery quality and workload forecasts.'],
+  ['Management systems make performance sustainable','Use calibrated absolute standards, balanced team and individual goals, respectful feedback, workload guardrails and flexible work design.','Change the mechanisms that shape behaviour: incentives, review processes, manager routines and escalation channels.','Review fairness, after-hours load, coaching quality, promotion access and recovery time.'],
+  ['Employees contribute with confidence','People can disagree, surface risks, ask for help and collaborate without treating colleagues as threats. Autonomy is paired with accountability and resources.','Psychological safety is not comfort or low standards; it is the ability to speak candidly in service of learning and execution.','Voice behaviour, issue escalation, cross-team contribution, learning from failure and trust in managers.'],
+  ['Performance becomes repeatable','Innovation and customer execution are supported by retention, knowledge continuity, stronger collaboration and a broader talent pool.','People sustainability becomes an operating capability, not a soft HR add-on.','Customer satisfaction, product quality, time to market, regretted attrition and internal mobility.']
+ ];
+ let mode='case',step=0,paused=false,timer=null;
+ const allNodes=[...document.querySelectorAll('.flow-node')];
+ function setInspector(route,index){const d=(route==='case'?caseInfo:futureInfo)[index];$('inspectorLabel').textContent=(route==='case'?'CASE SYSTEM':'REDESIGNED SYSTEM')+' · STEP 0'+(index+1);$('inspectorTitle').textContent=d[0];$('inspectorBody').textContent=d[1];$('inspectorMeaning').textContent=d[2];$('inspectorWatch').textContent=d[3];}
+ function selectStep(route,index){allNodes.filter(n=>n.dataset.route===route).forEach(n=>n.classList.toggle('active',+n.dataset.index===index));const progress=$(route+'Progress');if(progress)[...progress.children].forEach((el,i)=>el.classList.toggle('active',i===index));if(route===mode){step=index;setInspector(route,index);const info=(route==='case'?caseInfo:futureInfo)[index];$(route==='case'?'caseEventTitle':'futureEventTitle').textContent=(route==='case'?'Case signal: ':'Future-state signal: ')+info[0];$(route==='case'?'caseEventText':'futureEventText').textContent=info[1];}}
+ function stepTick(){step=(step+1)%4;selectStep(mode,step);}
+ function start(){if(timer)clearInterval(timer);timer=setInterval(()=>{if(!paused)stepTick()},2800);}
+ function setMode(next,updateScenario=true){mode=next;step=0;$('caseRoute').classList.toggle('selected',mode==='case');$('futureRoute').classList.toggle('selected',mode==='future');$('modeCase').classList.toggle('active',mode==='case');$('modeFuture').classList.toggle('active',mode==='future');selectStep(mode,0);if(updateScenario){const target=mode==='case'?'case':'sustainable';const btn=document.querySelector('.scenario[data-scenario="'+target+'"]');if(btn)btn.click();}}
+ allNodes.forEach(n=>{const activate=()=>{const route=n.dataset.route,index=+n.dataset.index;if(route!==mode)setMode(route,true);selectStep(route,index);};n.addEventListener('click',activate);n.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();activate();}});});
+ $('modeCase').addEventListener('click',()=>setMode('case'));$('modeFuture').addEventListener('click',()=>setMode('future'));
+ $('toggleFlow').addEventListener('click',()=>{paused=!paused;$('toggleFlow').textContent=paused?'Resume motion':'Pause motion';document.querySelectorAll('.flow-packet,.marquee-track').forEach(el=>el.style.animationPlayState=paused?'paused':'running');});
+ $('replayFlow').addEventListener('click',()=>{step=0;selectStep(mode,0);paused=false;$('toggleFlow').textContent='Pause motion';document.querySelectorAll('.flow-packet,.marquee-track').forEach(el=>el.style.animationPlayState='running');});
+ function animateNumber(el,val){el.textContent=Math.round(val);}
+ function updateTelemetry(){if(typeof current==='undefined'||typeof model!=='function')return;const m=model(current),pressure=Math.round(.45*current.workload+.25*current.ranking+.20*(100-current.safety)+.10*(100-current.flex));const vals={liveThriving:m.thriving,livePressure:pressure,liveInnovation:m.innovation,liveTurnover:m.turnover};Object.entries(vals).forEach(([id,v])=>{animateNumber($(id),v);const bar=$(id+'Bar');if(bar)bar.style.width=v+'%';});}
+ // Update in response to sliders/scenarios and once immediately after the main model initialises.
+ document.querySelectorAll('.control input[type=range]').forEach(el=>el.addEventListener('input',updateTelemetry));
+ document.querySelectorAll('.scenario').forEach(el=>el.addEventListener('click',()=>setTimeout(updateTelemetry,0)));
+ setMode('case',false);updateTelemetry();start();
+})();
+
+</script>
+</body>
+</html>
